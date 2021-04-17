@@ -1,0 +1,7 @@
+- mail: htphong7@gmail.com
+- cc: ngtbinh@hcmus.edu.vn
+- tiêu đề: Bài thực hành Trực quan hóa dữ liệu số 02
+- nộp file notebook (.jpynb) đã chạy xong kết quả, 
+đặt tên file như sau: DV_LAB02_HọTên_MSSV.jpynb
+
+Deadline lab 02: Hết ngày thứ 4, 28/10
