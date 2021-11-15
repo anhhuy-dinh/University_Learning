@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Assignment02_3</title>
+</head>
+
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small;">
+    <header>
+        <img width="100%" src="../images_Lab02/car3.jpg"/>
+    </header>
+    <table width="100%" border="0" cellspacing="0" cellpadding ="0">
+        <tr>
+            <td width="20%" valign="top">
+                <nav>
+                    <table border="1" cellpadding="2" cellspacing="0" width="100%">
+                        <tbody style="color: blue; border-color: blue; font-weight: bold;">
+                            <tr> <td> Trang chủ </td> </tr>
+                            <tr> <td> Giới thiệu sản phẩm </td> </tr>
+                            <tr> <td> Các đại lý </td> </tr>
+                            <tr> <td> Dịch vụ </td> </tr>
+                            <tr> <td> Hợp tác </td> </tr>
+                            <tr> <td> Góp ý </td> </tr>
+                            <tr> <td> Quảng cáo </td> </tr>
+                        </tbody>
+                    </table>
+                </nav>
+            </td>
+            <td>
+                <section>
+                    <header style="color: red; font-weight: bold; background-color: #ebe6e6;" align="center">
+                        HỘP THƯ GÓP Ý 
+                    </header>
+                    <article>
+                        <form method="get" name="CommentForm">
+                            <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                <tbody style="color: steelblue;">
+                                    <tr>
+                                        <td align="right" width="30%"> Họ tên </td>
+                                        <td> <input name="txtHoTen" type="text"/> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"> Hộ khẩu </td>
+                                        <td>
+                                            <select name="listHoKhau">
+                                                <option value="0"> TP Ho Chi Minh </option>
+                                                <option value="1"> Ha Noi </option>
+                                                <option value="2"> Da Nang </option>
+                                                <option value="3"> Can Tho </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"> Góp ý về lĩnh vực </td>
+                                        <td>
+                                            <input name="cmtField" type="checkbox" value="0"/> Dịch vụ
+                                            <input name="cmtField" type="checkbox" value="1"/> Sản phẩm
+                                            <input name="cmtField" type="checkbox" value="2"/> Loại khác
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"> Ngôn ngữ </td>
+                                        <td>
+                                            <input name="rdLanguage" type="radio" value="0"/> Anh
+                                            <input name="rdLanguage" type="radio" value="1" checked="checked"/> Việt
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"> Nội dung </td>
+                                        <td> <textarea name="txtAreaContent" cols="" rows="3"></textarea> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> &nbsp; </td>
+                                        <td>
+                                            <input name="btnGui" type="button" value="Gui"/>
+                                            <input name="btnXoa" type="button" value="Xoa"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </article>
+                </section>
+            </td>
+        </tr>
+    </table>
+</body>

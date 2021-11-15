@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Demo04</title>
+</head>
+
+<body>
+    <br />
+    <div align="center">
+        <font color="FF0000" style="font-weight: bold; font-size: large;">
+            Đăng ký thi tiếng hát truyền hình
+        </font>
+    </div>
+    <br />
+
+    <form method="get" name="ResidterForm">
+        <table width="100%" border="0" cellspacing="5" cellpadding="0">
+            <tr>
+                <td align="right" width="45%"> Họ tên : </td>
+                <td> <input name="txtHoTen" type="text" /> </td>
+            </tr>
+            <!-- <tr> -->
+                <tr>
+                    <td align="right"> Hộ khẩu : </td>
+                    <td>
+                        <select name="listHoKhau">
+                            <option value="0"> TP HCM </option>
+                            <option value="1"> Hà Nội </option>
+                            <option value="2"> Đà Nẵng </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"> Giới tính : </td>
+                    <td>
+                        <input name="rdSex" type="radio" value="0" checked="checked" /> Nam
+                        <input name="rdSex" type="radio" value="1" /> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"> Hình : </td>
+                    <td>
+                        <input name="txtHinh" type="text" />
+                        <input name="btnBrowse" type="button" value="Browse" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"> Danh sách bài hát đăng ký :</td>
+                    <td> <textarea name="TxtAreaDanhSach" cols="" rows="5"> </textarea> </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; </td>
+                    <td>
+                        <input name="btnDangKy" type="button" value="DangKy" />
+                        <input name="btnXoa" type="button" value="Xoa" />
+                    </td>
+                </tr>
+            <!-- </tr> -->
+        </table>
+    </form>
+</body>
