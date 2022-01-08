@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A02</title>
+    <link href="A02.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="A02.js"></script>
+</head>
+<body>
+    <form action="" method="get" name="frmInvoice">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="title">
+                <td class="id"> STT </td>
+                <td> Tên hàng </td>
+                <td class="input"> Số lượng có </td>
+                <td class="input"> Số lượng mua </td>
+                <td class="input"> Đơn giá </td>
+                <td class="chk"> Chọn mua </td>
+            </tr>
+            <tr>
+                <td class="id"> 1 </td>
+                <td> CPU </td>
+                <td> <input name="SoLuongCo" id="A1" type="text" value="10" readonly="readonly"/> </td>
+                <td> <input name="SoLuongMua" id="B1" type="text" onChange="chk(1)"/> </td>
+                <td> <input name="DonGia" id="C1" type="text" value="100" readonly="readonly"/> </td>
+                <td class="chk"> <input id="chk1" type="checkbox" onchange="check(1)"/> </td>
+            </tr>
+            <tr>
+                <td class="id"> 2 </td>
+                <td> RAM </td>
+                <td> <input name="SoLuongCo" id="A2" type="text" value="10" readonly="readonly"/> </td>
+                <td> <input name="SoLuongMua" id="B2" type="text" onchange="chk(2)"/> </td>
+                <td> <input name="DonGia" id="C2" type="text" value="50" readonly="readonly"/> </td>
+                <td class="chk"> <input id="chk2" type="checkbox" onchange="check(2)"/> </td>
+            </tr>
+            <tr>
+                <td class="id"> 3 </td>
+                <td> HDD </td>
+                <td> <input name="SoLuongCo" id="A3" type="text" value="10" readonly="readonly"/> </td>
+                <td> <input name="SoLuongMua" id="B3" type="text" onchange="chk(3)"/> </td>
+                <td> <input name="DonGia" id="C3" type="text" value="80" readonly="readonly"/> </td>
+                <td class="chk"> <input id="chk3" name="ChonMua" type="checkbox" onchange="check(3)"/> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="button" value="OK" onclick="calculate()" </td>
+                <td class="totalCell" colspan="3"> Tổng: <input name="Total" type="text" readonly="readonly"/> </td>
+                <td class="chk"> <input id="chkVAT" name="VAT" type="checkbox"/> VAT </td>
+            </tr>
+        </table>
+    </form>
+    <p id="demo"></p>
+</body>
+</html>

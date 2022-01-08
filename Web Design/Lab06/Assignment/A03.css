@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input {
+    border: 3px solid #7F7F7F;
+}
+
+#ID {
+    width: 100px;
+}
+
+#FirstName, #LastName {
+    width: 260px;
+}
+
+#srID {
+    width: 60px;
+}
+
+#srFirstName, #srLastName {
+    width: 65%;
+}
+
+#srEmail {
+    width: 70%;
+}

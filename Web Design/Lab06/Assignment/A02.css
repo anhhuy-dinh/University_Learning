@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+    font-family: sans-serif;
+}
+h2 {
+    text-align: center;
+}
+.error {color: #FF0000;}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+form {
+    display: table;
+}
+
+#row, #row-name, #row-email, #row-website, #row-cmt, #row-gender {
+    display: table-row;
+    padding: 10px;
+}
+
+#col1 {
+    display: table-cell;
+    width: 30%;
+    padding: 8px 10px;
+}
+
+#col2 {
+    display: table-cell;
+}
+
+input {
+    height: 18px;
+}
+
+.cmt {
+    padding: 8px 0;
+}
+
+#col {
+    width: 50px;
+}

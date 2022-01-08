@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: #fff;
+}
+#body {
+    width: 960px;
+    margin: 0 auto;
+    background: #ddd;
+}
+#header {
+    padding: 10px;
+    background: #fdd;
+}
+#content-1 {
+    float: left;
+    width: 220px;
+    padding: 10px;
+    background: #bfb;
+}
+#content-2 {
+    float: right;
+    width: 720px;
+}
+#content-2-1 {
+    float: left;
+    width: 460px;
+    padding: 10px;
+    background: #ddf;
+}
+#content-2-2 {
+    float: right;
+    width: 220px;
+    padding: 10px;
+    background: #dff;
+}
+#footer {
+    clear: both;
+    padding: 10px;
+    background: #ff9;
+}

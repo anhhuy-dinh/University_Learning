@@ -1,0 +1,2 @@
+Tong chi phi di chuyen = 16
+Duong di ngan nhat cua do thi la: A -> C -> D -> E -> G -> Z 

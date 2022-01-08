@@ -1,0 +1,2 @@
+Tong chi phi di chuyen = 29
+Duong di ngan nhat cua do thi la: 1 -> 3 -> 5 -> 10 

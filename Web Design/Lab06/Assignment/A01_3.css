@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+    width: 650px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    background-color: #FEECF8;
+    width: 100%;
+}
+
+tr {
+    margin: 5px;
+    padding: 3px;
+}
+
+#title {
+    background-color: #980065;
+    font-family: 'Sriracha';
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#left, #left_1, #left_2 {
+    width: 40%;
+    padding: 5px 10px;
+}
+
+#right, #right_1, #right_2 {
+    padding: 3px;
+}
+
+#left_1, #left_2, #right_1, #right_2 {
+    background-color: #FDCDE7;
+}
+
+input {
+    height: 23px;
+    font-size: 16px;
+}
+
+#cal {
+    font-size: 17px;
+    padding: 3px;
+    text-align: center;
+    background-color: #FEFC96;
+    width: 220px;
+}
+
+#inputCell {
+    width: 250px;
+}
+
+#array {
+    width: 330px;
+    background-color: #FE969B;
+}
+
+#maxValue, #minValue, #sum {
+    background-color: #FE969B;
+}
+
+#noteDiv {
+    text-align: center;
+    padding: 5px;
+}
+
+#note {
+    color: #CF174B;
+    font-weight: bold;
+}

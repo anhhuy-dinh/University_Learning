@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+body {
+    background-image: url("../images_Lab04/images2/bg.jpg");
+    margin: 0 auto;
+    padding: 0;
+    background-repeat: repeat-x;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+div#HeaderDivision {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+div#row {
+    display: table-row;
+}
+
+div#nav {
+    display: table-cell;
+    width: 25%;
+}
+
+div#nav > font {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+div#nav > ul {
+    display: block;
+    list-style-type: none;
+    padding-left: 7px;
+}
+
+div#nav > ul > li {
+    background-image: url(../images_Lab04/images2/links-bg.jpg);
+    background-size: 100% 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 2px;
+}
+
+div#nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding-left: 30%;
+}
+
+div#header {
+    display: table-cell;
+    width: 100%;
+    background-image: url("../images_Lab04/images2/header.png");
+    background-size: 100% 95%;
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+div#header > #HeaderText {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 15%;
+    position: absolute;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #DDBC8B;
+}
+
+#text {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+div#container {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 89.5%;
+    height: 700px;
+    padding-left: 7px;
+    margin-top: -15px;
+    padding-top: 0;
+}
+
+div#left {
+    display: table-cell;
+    width: 24.5%;
+    border-right: 2px dashed #B8B5B5; 
+    padding-right: 5px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#FirstWord { color: #F53B7B; }
+
+#SubTitle { 
+    font-weight: bold; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#left > #CompanyNews > p > a, #CustomerTestimonials > p > a {
+    float: right;
+    font-weight: bold;
+    font-size: 13px;
+    color: #F53B7B;
+    padding-right: 5px;
+}
+
+.content {
+    padding-bottom: 5px;
+    height: 10%;
+}
+
+div#left > #CompanyNews > .title, #CustomerTestimonials > .title {
+    padding-left: 15%;
+    font-size: 16px;
+}
+
+div#MainContent {
+    display: table-cell;
+    padding: 0px 5px 5px 10px;
+    border-right: 3px solid #B8B5B5;
+}
+
+div#head {
+    width: 100%;
+}
+
+div#head > #image1 {
+    display: inline-block;
+}
+
+div#image1 > img {
+    width: 45px;
+    vertical-align: text-top;
+}
+
+div#image1:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+div#head > .title {
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+div#image2 {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+div#image2 > img {
+    width: 250px;
+    transition: transform 1s ease;
+    border: 2px solid #B8B5B5;
+}
+
+div#image2:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+div#content {
+    position: relative;
+}
+
+#content2 {
+    width: 65%;
+}
+
+div#content > #TestLink {
+    position: absolute;
+    padding-top: 30px;
+    padding-right: 10px;
+    top: 130px;
+    right: 0;
+    width: 35%;
+}
+
+div#TestLink > ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+div#TestLink > ul > li {
+    text-decoration: underline;
+    padding: 5px 0px 8px 0px;
+    border-bottom: 2px dotted #B8B5B5;
+}
+
+div#TestLink > ul > li > a {
+    color: #F53B7B;
+    font-weight: 500;
+}
+
+div#footer {
+    position: fixed;
+    clear: both;
+    width: 100%;
+    background-color: #2F2F2F;
+    border-top: 5px solid #4283C8;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+div#footer > ul {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    list-style-type: none;
+    padding: 0 auto;
+    overflow: hidden;
+}
+
+div#footer > ul > li {
+    display: inline-block;
+    padding: 10px 0px 15px 0px;
+}
+
+div#footer > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 35px;
+    font-size: 13px;
+    border-left: 1px solid white;
+}
+
+div#footer > ul > li > #LeftMenu {
+    border-left: 0;
+}
+
+div#footer > ul > li > a:hover {
+    color: #F53B7B;
+    font-weight: bold;
+}
+

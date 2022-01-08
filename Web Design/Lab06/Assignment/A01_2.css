@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+    width: 470px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title {
+    background-color: #FDCB68;
+    font-family: 'Sriracha';
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.2;
+    color: #A34C04;
+}
+
+#main {
+    width: 100%;
+    padding: 0 5px;
+    background-color: #FEEBCA;
+}
+
+#item {
+    width: 40%;
+}
+
+tr, td, input, button {
+    padding: 5px;
+}
+
+#calcell {
+    text-align: center;
+}
+
+input#area, input#diameter {
+    background-color: #F7CECE;
+}
+

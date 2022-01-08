@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #68a4ff;
+}
+
+.clock {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url(../images_Lab05/clock_new.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 20px solid #fff;
+    box-shadow: inset 0 0 30px rgba(0,0,0,.1),
+                0 20px 20px rgba(0,0,0,.2),
+                0 0 0 4px rgba(255,255,255,1);
+}
+
+.clock::before {
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #848484;
+    border: 2px solid #fff;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+.hour, .min, .sec {
+    position: absolute;
+}
+
+.hour, .hr {
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+
+.min, .mn {
+    width: 190px;
+    height: 190px;
+    z-index: 2;
+}
+
+.sec, .sc {
+    width: 230px;
+    height: 230px;
+    z-index: 3;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before {
+    content: ' ';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #848484;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+    content: ' ';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #d6d6d6;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ff6767;
+    border-radius: 6px 6px 0 0;
+}
+
+.digitalClock {
+    position: absolute;
+    z-index: 0;
+    font-family: sans-serif;
+    background: #f3f2f2;
+    padding: 6px 10px 6px 10px;
+    font-size: 22px;
+    font-weight: bold;
+    top: 68%;
+    left: 33%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 2px 2px #0000001a;
+    border-radius: 2px;
+    text-align: center;
+}

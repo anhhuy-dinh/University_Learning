@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A01_2</title>
+    <link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+    <script src="../JQuery/jquery-3.6.0.js"></script>
+    <link href="A01_2.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function() {
+            $("button").click(function() {
+                var radius = $("#radius").val();
+                var area, diameter;
+                area = Math.pow(radius, 2) * Math.PI;
+                diameter = 2 * Math.PI * radius;
+                document.getElementById("area").value = area;
+                document.getElementById("diameter").value = diameter;
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="title"> DIỆN TÍCH và CHU VI<br>HÌNH TRÒN </div>
+    <table id="main">
+        <tr>
+            <td id="item"> Bán kính: </td>
+            <td id="content"> <input id="radius" type="text"> </td>
+        </tr>
+        <tr>
+            <td> Diện tích: </td>
+            <td> <input id="area" type="text" readonly="readonly"> </td>
+        </tr>
+        <tr>
+            <td> Chu vi: </td>
+            <td> <input id="diameter" type="text" readonly="readonly"> </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="calcell"> <button id="cal"> Tính </button> </td>
+        </tr>
+    </table>
+</body>
+</html>

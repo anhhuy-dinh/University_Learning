@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body {
+    width: 400px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title {
+    background-color: #99CAF8;
+    text-align: center;
+    font-weight: bolder;
+    color: #1B27D5;
+    font-size: 30px;
+}
+
+#InputDiv {
+    background-color: #C6EDEC;
+    padding: 5px;
+}
+
+#HelloDiv {
+    text-align: center;
+    background-color: #C6EDEC;
+    padding: 5px;
+}
+
+#button {
+    background-color: #98CBFE;
+    text-align: center;
+    padding: 3px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Demo02</title>
+    <script src="../JQuery/jquery-3.6.0.js"> </script>
+    <script>
+        $(function() {
+            var NumArr = "";
+            $("button.RandomBtn").click(function() {
+                //Random number from 1 to 20
+                for (i = 0; i < 10; i++)
+                    NumArr = NumArr + Math.floor((Math.random() * 20) + 1) + " ";
+                $("#RandomDiv").append("Dãy số là: " + NumArr);
+            });
+
+            $("button.SumBtn").click(function() {
+                var EleNum = NumArr.split(' ');
+                var Sum = 0;
+                $.each(EleNum, function(index, value) {
+                    Sum = Sum + Number(value);
+                });
+                
+                $("#SumDiv").append("Tổng dãy số " + NumArr + " là : " + Sum);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button class="RandomBtn"> Tạo ngẫu nhiên dãy </button>
+    <div id="RandomDiv"></div>
+    <button class="SumBtn"> Tính tổng </button>
+    <div id="SumDiv"></div>
+</body>
+</html>

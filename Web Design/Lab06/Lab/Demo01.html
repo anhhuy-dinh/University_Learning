@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Demo01</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script>
+        $(function() {
+            var timeHr = prompt("Nhập Giờ");
+            alert("Nhấn nút Chào để xem kết quả");
+            $("button").click(function() {
+                var str;
+                if (timeHr <= 12)
+                    str = "Chào buổi sáng";
+                else
+                    if (timeHr <= 17)
+                        str = "Chào buổi chiều";
+                    else 
+                        str = "Chào buổi tối";
+                
+                str = str + ". Bây giờ là " + timeHr + " giờ.";
+                $("#HelloDiv").append(str);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="HelloDiv"></div>
+    <button> Chào </button>
+</body>
+</html>

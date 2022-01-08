@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+body {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../images_Lab04/images1/border.png) round;
+    border-image-slice: 20%;
+}
+
+div#SearchDivision {
+    background-image: url(../images_Lab04/images1/searchbg.jpg);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+div#SearchDivision form > font {
+    color: #FFF;
+}
+
+div#BannerDivision img {
+    width: 100%;
+}
+
+div#HeaderDivision {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #006;
+    text-align: center;
+}
+
+div#HeaderDivision font {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 36px;
+    opacity: 0.8;
+}
+
+div#container {
+    display: table;
+}
+
+div#row {
+    margin-top: 0px;
+    display: table-row;
+    vertical-align: top;
+}
+
+div#left {
+    display: table-cell;
+    width: 15%;
+    background-color: #D3FBFE;
+}
+
+div#middle {
+    display: table-cell;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#right {
+    display: table-cell;
+    width: 15%;
+    background-color: #D3FBFE;
+}
+
+div#left > span {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid #009;
+}
+
+div#left > ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+div#left > ul > li {
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #00C;
+}
+
+div#content2 > span {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    color: #006;
+    border-bottom: 1px solid #009;
+}
+
+div#content3 > span {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    color: white;
+    background-color: #03F;
+}
+
+div#content4 > span {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, blue 0%, white 100%);
+    border-image-slice: 1;
+}
+
+div#footer {
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: #006;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Demo04</title>
+    <script type="text/javascript" src="Demo04.js"></script>
+</head>
+
+<body>
+    <form action="" name="frm1" method="post">
+        Number 1 <input type="text" name="txtNum1"/>
+                 <select name="op">
+                     <option value="+"> Phép cộng </option>
+                     <option value="-"> Phép trừ </option>
+                     <option value="*"> Phép nhân </option>
+                     <option value="/"> Phép chia </option>
+                 </select>
+        Number 2 <input type="text" name="txtNum2"/>
+                 <input type="button" value="Calculate" onclick="calculate()"/><br/>
+        Result <input type="text" name="txtResult" readonly="readonly" /><br/>
+    </form>
+</body>
+</html>

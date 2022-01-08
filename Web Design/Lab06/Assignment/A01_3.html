@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A01_3</title>
+    <link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+    <script src="../JQuery/jquery-3.6.0.js"></script>
+    <link href="A01_3.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function() {
+            $("button").click(function() {
+                var num = $("#inputCell").val();
+                var NumArr = "";
+                for (i = 0; i < num; i++) {
+                    if (i != num - 1) {
+                        NumArr = NumArr + Math.floor((Math.random() * 20) + 1) + " ";
+                    } else {
+                        NumArr = NumArr + Math.floor((Math.random() * 20) + 1);
+                    }
+                }
+                document.getElementById("array").value = NumArr;
+
+                var EleNum = NumArr.split(' ');
+                var Sum = 0;
+                var max = Math.max.apply(Math, EleNum);
+                var min = Math.min.apply(Math, EleNum);
+                $.each(EleNum, function(index, value) {
+                    Sum += Number(value);
+                });
+                document.getElementById("maxValue").value = max;
+                document.getElementById("minValue").value = min;
+                document.getElementById("sum").value = Sum;
+            })
+        })
+    </script>
+</head>
+<body>
+    <table id="container">
+        <tr id="title">
+            <td colspan="2"> PHÁT SINH MẢNG VÀ TÍNH TOÁN </td>
+        </tr>
+        <tr>
+            <td id="left_1"> Nhập số phần tử: </td>
+            <td id="right_1"> <input id="inputCell" type="text"> </td>
+        </tr>
+        <tr>
+            <td id="left_2"></td>
+            <td id="right_2"> <button id="cal"> Phát sinh và tính toán </button> </td>
+        </tr>
+        <tr>
+            <td id="left"> Mảng: </td>
+            <td id="right"> <input id="array" type="text" readonly="readonly"> </td>
+        </tr>
+        <tr>
+            <td id="left"> GTLN (MAX) trong mảng: </td>
+            <td id="right"> <input id="maxValue" type="text" readonly="readonly"> </td>
+        </tr>
+        <tr>
+            <td id="left"> GTNN (MIN) trong mảng: </td>
+            <td id="right"> <input id="minValue" type="text" readonly="readonly"> </td>
+        </tr>
+        <tr>
+            <td id="left"> Tổng mảng: </td>
+            <td id="right"> <input id="sum" type="text" readonly="readonly"> </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="noteDiv"> (<span id="note">Ghi chú:</span> Các phần tử trong mảng sẽ có giá trị từ 0 đến 20) </td>
+        </tr>
+    </table>
+</body>
+</html>

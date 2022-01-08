@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+div#HeaderDivision > font {
+    display: block;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    background-color: #03F;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+div#container {
+    display: table;
+    margin: 10px auto;
+}
+
+div#row {
+    display: table-row;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+div#image1 {
+    display: table-cell;
+    border: 1px solid #000;
+}
+
+div#image1 > img:hover {
+    content: url(../images_Lab04/images3/smiley%202.jpg);
+}
+
+div#image2 {
+    display: table-cell;
+    border: 1px solid #000;
+    position: relative;
+}
+
+div#image2 > #init_image2 {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+div#image2 > #text_image2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#image2:hover #init_image2 {
+    opacity: 0.3;
+}
+
+div#image2:hover #text_image2 {
+    opacity: 1;
+}
+
+#text {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 16px;
+    padding: 5px 5px;
+}
+
+div#image3 {
+    display: table-cell;
+    border: 1px solid #000;
+}
+
+div#image3:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+div#image4 {
+    display: table-cell;
+    border: 1px solid #000;
+}
+
+div#image4:hover > img {
+    border-radius: 50%;
+}
+
+div#image5 {
+    display: table-cell;
+    background-color: #eae9d4;
+    padding: 6px;
+    -webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    -moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+span#large_image5 {
+    position: absolute;
+    left: -9999px;
+}
+
+span#large_image5 > img {
+    width: 80%;
+    height: auto;
+}
+
+div#image5:hover {
+    z-index: 50;
+    cursor: pointer;
+}
+
+div#image5:hover > span#large_image5 {
+    top: 300px;
+    left: 400px;
+}

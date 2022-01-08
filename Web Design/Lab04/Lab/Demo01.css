@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+div#ShadowBox {
+    background-color: yellow;
+    width: 500px;
+    margin: 20px auto;
+    box-shadow: 10px 10px gray; /* h-shadow v-shadow color*/
+    padding: 6px;
+}
+
+div#RoundedCorners {
+    background-color: #39F;
+    width: 500px;
+    margin: 20px auto;
+    padding: 5px;   /* 4 corners have the same ratius */
+    border-radius: 15px;
+}

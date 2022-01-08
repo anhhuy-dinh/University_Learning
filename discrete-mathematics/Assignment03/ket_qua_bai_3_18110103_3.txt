@@ -1,0 +1,2 @@
+Tong chi phi di chuyen = 15
+Duong di ngan nhat cua do thi la: 8 -> 7 -> 2 -> 5 -> 6 -> 10 

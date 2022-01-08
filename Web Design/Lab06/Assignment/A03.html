@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A03</title>
+    <script src="../JQuery/jquery-3.6.0.js"></script>
+    <link href="A03.css" rel="stylesheet" type="text/css"/>
+    <script>
+        function ConnectToMySQL() {
+            var ConnectType = "ConnectToMySQL";
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("AccountDiv").innerHTML = this.responseText;
+                }
+            }
+            xmlhttp.open("GET", "ConnectType.php?ConnectType=" + ConnectType, true);
+            xmlhttp.send();
+        }
+
+        var obj = {"table": "account", "ID": "", "FirstName": "", "LastName": "", "Email": ""};
+
+        function Search(ele) {
+            $var = $("#sr"+ele).val();
+            var dbParam, xmlhttp, myObj, x, txt = "";
+            obj[ele] = "%" + $var + "%";
+            dbParam = JSON.stringify(obj);
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("AccountDiv").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "Search.php?search=" + dbParam, true);
+            xmlhttp.send();
+        }
+
+
+    </script>
+</head>
+<body>
+    <form method="post">
+        <input type="button" value="Connect to MySQL" onclick="ConnectToMySQL()"> <br/>
+    </form>
+    <br/>
+    <table id="table-data">
+        <thead>
+            <tr>
+                <th id="ID">ID <input id="srID" type="text" placeholder="ID.." onkeyup="Search('ID')"></th>
+                <th id="FirstName">Firstname <input id="srFirstName" type="text" placeholder="First name.." onkeyup="Search('FirstName')"></th>
+                <th id="LastName">Lastname <input id="srLastName" type="text" placeholder="Last name.." onkeyup="Search('LastName')"></th>
+                <th id="Email">Email <input id="srEmail" type="text" placeholder="Email.." onkeyup="Search('Email')"></th>
+            </tr>
+        </thead>
+        <tbody id="AccountDiv"></tbody>
+    </table>
+</body>
+</html>

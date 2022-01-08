@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A01_1</title>
+    <script src="../JQuery/jquery-3.6.0.js"></script>
+    <link href="A01_1.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function() {
+            $("button").click(function() {
+                var timeHr = $("#InputTime").val();
+                var str;
+                if (0 >= timeHr)
+                    str = "Giờ bạn nhập chưa hợp lệ. Vui lòng nhập giờ trong phạm vi từ 0 - 23.";
+                else
+                    if (timeHr <= 12)
+                        str = "Chào buổi sáng!";
+                    else
+                        if (timeHr <= 17)
+                            str = "Chào buổi chiều!";
+                        else
+                            if (timeHr <= 23)
+                                str = "Chào buổi tối!";
+                            else
+                                str = "Giờ bạn nhập chưa hợp lệ. Vui lòng nhập giờ trong phạm vi từ 0 - 23.";
+                document.getElementById("HelloDiv").innerHTML = str;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="title"> CHÀO THEO GIỜ </div>
+    <div id="InputDiv">
+        <span> Nhập giờ: </span> &emsp;
+        <input type="text" id="InputTime"/>
+    </div>
+    <div id="HelloDiv"></div>
+    <div id="button">
+        <button> Chào </button>
+    </div>
+</body>
+</html>
