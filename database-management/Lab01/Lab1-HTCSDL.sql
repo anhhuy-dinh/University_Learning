@@ -66,4 +66,4 @@ WHERE Country in ('USA', 'UK') AND NOT City = 'London' AND Fax IS NOT NULL
 -- Truy vấn các sản phẩm mà đóng gói (Package) dưới dạng 'boxes' mà có giá trị từ 10 đến 20 --
 SELECT *
 FROM Product
-WHERE Package LIKE '%boxes%' AND UnitPrice BETWEEN 10 and 20
+WHERE Package LIKE '%boxes%' AND UnitPrice BETWEEN 10 AND 20
